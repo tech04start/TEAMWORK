@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat&display=swap');
+
+
+
+body{background-image: linear-gradient(to bottom right,lightgrey,darkgrey,black);
+   width:100vw;
+    height:100vh;
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    
+}
+
+.sub-background{
+    background-color: rgba(255, 255, 255, 0.8);
+    width:90%;
+    height:85%;
+    border-radius: 40px;
+  
+    position: relative;
+    box-shadow: 0 1rem 1rem rgb(0 0 0 / 0.2);
+
+}
+
+/* nav styling */
+
+.logo__left{
+    font-size: 1.5rem;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    cursor: pointer;
+}
+.logo__right{
+    font-size: 1.5rem;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    cursor: pointer;
+}
+
+    ul {display:flex;
+        list-style: none;
+        gap:1rem;
+        align-items: center;
+    }
+    li a{text-decoration: none;
+        font-family: 'Ubuntu';
+        background-color: transparent;
+        font-weight: 600;
+        font-size: 1.2rem;
+        animation-duration: 2s;
+        padding:0.5rem 0.3rem;
+    color:black}
+    li{
+        padding: 0.6rem;
+    }
+    .active{
+    font-weight: 500;
+    font-family:'Ubuntu';
+    border-radius:25px ;
+    font-size: 1.2rem;
+    background-color: teal;
+    color:white;
+    border: none;
+    padding:0.7rem;
+    opacity: 80%;
+    }
+    .active a{
+        color: white;
+    }
+    .right-nav{display:flex;
+        gap:20px;}
+    .navbar{display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:40px 60px;}
+    
+    .active:hover{
+    background-color: #212121;
+    cursor: pointer;
+    transition:background-color 0.3s ease-out;
+    }
+    li:hover{
+        background-color: teal;
+        border-radius:25px ;
+        transition: border 0.5s ease-out;
+        transition: background-color 0.5s ease-out;
+    }
+    li a:hover{
+   
+    
+    color: white;
+   
+    cursor: pointer;}
+    
+    
+
+ 
+    /* footer */
+    footer{
+        position: absolute;
+        bottom: 5%;
+    }
+    .footer-icons{
+        width:25px;
+        height:25px;
+        color: rgb(113, 112, 112);
+        transition: 0.4s;
+    }
+    .left-last{
+        display: flex;
+        gap:40px;
+        justify-content: space-between;
+    }
+    .copyright{font-family: 'Ubuntu';
+        font-size: 16px;
+        font-weight: 500;
+        color: rgb(113, 112, 112) ;
+        }
+    
+    @media(min-width:726px) {
+       
+    .last{display: flex;
+        /* gap:200px; */
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    flex-wrap: wrap;
+    width: 80vw;
+    
+    }}
+    @media(max-width:726px){.last
+        {display: flex;
+            flex-direction: row;
+        gap:20px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    flex-wrap: wrap;
+    
+    }
+    
+    }
+ 
+    .footer-icons:hover{
+        scale: 1.5;
+        cursor: pointer;
+    }        
+    
+        
+        
+        
+        
+     
+    
+    
+       
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="community.css">
+    <link rel="stylesheet" href="contact.css">
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    
+    <div class="sub-background">
+       <!--all content to be put in this sub-background div-->
+                <!---HEADER START-->
+    <header>
+        <!--NAVBAR START-->
+         <div class="navbar">
+             <!--LOGO OF WEBSITE-->
+             <div class="left-nav">
+                 <span class="logo__left">Fit</span><span class="logo__right">Matrix</span>
+             </div>
+             <!--MENU OF NAVBAR-->
+             <div class="right-nav">
+                  <ul class="nav-right">
+                     <li class="<%= currentPage === 'home' ? 'active' : '' %>"><a href="/">Home</a></li>
+                     <li class="<%= currentPage === 'logix' ? 'active' : '' %>"><a href="/logix">FitLogix</a></li>
+                     <li class="<%= currentPage === 'community' ? 'active' : '' %>"><a href="/community">FitCommunity</a></li>
+                     <li class="<%= currentPage === 'about' ? 'active' : '' %>"><a href="/about">About Us</a></li>
+                     <li class="<%= currentPage === 'contact' ? 'active' : '' %>"><a href="/contact">Contact Us</a></li>
+                     <li class="<%= currentPage === 'register' ? 'active' : '' %>"><a href="/register">SIGN UP</a></li>
+                     <li class="<%= currentPage === 'login' ? 'active' : '' %>"><a href="/login">SIGN IN</a></li>
+                     
+                 
+                 </ul>
+                 </div>
+                 <!--MENU ENDS-->
+                 
+             </div>
+             <!--NAVBAR ENDS-->
+         
+         <!--HEADER ENDS-->
+     
+     </header>

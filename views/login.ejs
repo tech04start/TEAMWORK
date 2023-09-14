@@ -1,0 +1,48 @@
+<%- include("partials/header") %>
+<div class="login-page">
+    <!--LOGIN BOX-->
+    <div class="left-login">
+        <p class="login">LOGIN</p>
+        <!--ALL THE INPUTS FROM USER-->
+        <div class="details-login">
+            <input class="user-detail" type="email" placeholder="Email">
+            <div class="login-password">
+            <input class="user-detail" type="password" placeholder="Password">
+            <svg class="eye" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+              </svg>
+            </div> 
+        </div> 
+            <!--KEEP ME LOGGES IN USER SCETION-->       
+            <div class="future-save">
+                <!--CHECKBOX-->
+                <div class="checkbox-option">
+                    <div class="checkbox-wrapper-46">
+                        <input class="inp-cbx" id="cbx-46" type="checkbox" />
+                         <label class="cbx" for="cbx-46"><span>
+                        <svg width="12px" height="12px" viewbox="0 0 12 10">
+                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                        </svg></span>
+                        </label>
+                    </div>
+                <p class="keep-logged">Keep me Logged in</p>
+                </div>
+                
+                <a href="" class="forgot">Forgot password?</a>
+
+            </div>
+            
+        
+        <!--INPUTS ENDS-->
+        <!--SUBMIT SIGNUP BUTTON-->
+        <button class="confirm-login">LOGIN</button>
+        <p class="register-option">Not Registered Yet?<span><a href="">Signup</a></span></p>
+    </div>
+    <!--SIGNUP BOX ENDS-->
+    <!--GYM IMAGE-->
+    <img class="right-login" src="images/gym.png" alt="">
+    
+ </div>
+ <!--SIGNUP FORM ENDS-->
+<%- include("partials/footer") %>

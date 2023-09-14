@@ -1,0 +1,196 @@
+
+    /* Community */
+/* .middle-part */
+
+.middle-part {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .left-part */
+
+.box {
+    /* background-color: red; */
+    width: 40rem;
+    height: 22rem;
+    margin-left: 2rem;
+    border: none;
+    border-radius: 2rem;
+    position: relative;
+    margin-top: -3rem;
+    background-color: transparent;
+    
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    
+    
+
+}
+
+.user-1 {
+    display: flex;
+    margin-top: 0.8rem;
+}
+
+.user-1 i {
+    width: 3rem;
+    height: 2rem;
+    box-shadow: 0 0.2rem 0.2rem 0 rgba(31, 38, 135, 0.37);
+    border-radius: 50%;
+    padding-left: 1rem;
+    padding-top: 1.8rem;
+    margin-left: 1rem;
+    margin-top: 3rem;
+    margin-right: 1rem;
+}
+
+.content-1 {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0.2rem 0.2rem 0 rgba(31, 38, 135, 0.37);
+    border-radius: 1rem 1rem 1rem 0;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.user-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 2rem;
+    padding-right: 1rem;
+}
+
+.user-2 i {
+    width: 3rem;
+    height: 2rem;
+    padding-left: 1rem;
+    padding-top: 1.8rem;
+    box-shadow: 0 0.2rem 0.2rem 0 rgba(31, 38, 135, 0.37);
+    /* border: 1px solid black; */
+    border-radius: 100%;
+    margin-right: 0.5rem;
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+
+.content-2 {
+    display: flex;
+    flex-direction: column;
+   
+    border-radius: 1rem 1rem 0 1rem;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0.2rem 0.2rem 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    position: relative;
+    
+
+}
+
+.message-box {
+    position: absolute;
+    bottom: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    /* text-align: center; */
+}
+
+.message-box input {
+    padding: 0.8rem 20rem 0.8rem 0.5rem;
+    border-radius: 0.5rem;
+   margin-right: -0.3rem;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    /* border-radius: 10px; */
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#send{
+    height: 2.5rem;
+    
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.left-part {
+    /* background-color: green; */
+    margin: auto;
+    height: 20rem;
+    width: 30rem;
+    display: flex;
+    align-items: center;
+}
+
+.left-part li a:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+.left-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.left-part ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-part ul li {
+    /* background-image: linear-gradient(to bottom right, lightgrey, darkgrey, black); */
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 1.3rem 0.5rem 1.3rem;
+    border: 2px solid black;
+}
+
+.left-part h1 {
+    /* background-color: #212121; */
+    font-size: 3.4rem;
+    margin-top: -2rem;
+    font-family: 'Ubuntu';
+}
+
+.detail {
+    height: 5rem;
+    width: 20rem;
+    
+}
+.home__redirect{
+    border: none;
+   cursor: pointer;
+    border-radius: 1.5rem;
+    padding: 0.6rem;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Ubuntu';
+    font-weight: 900;
+    
+    
+    
+}
+
+.home__redirect:hover{
+    background-color: teal;
+    color: white;
+}
