@@ -1,36 +1,32 @@
   /*signup style*/
-  .register-page{
-    display:flex;
-justify-content: space-around;
-height:80%;
-padding-left:5% ;
-padding-right: 5%;
-flex-wrap: wrap;
-
-
-}
-.left-register{display: flex;
-    flex-direction: column;
-    align-items: center;
-    width:50%;
-    height:75%;
-    text-align: center;
-    position: relative;
-    bottom: 5%;
-    background: linear-gradient(to right , rgba( 0, 128, 128, 0.55 ), rgba(189, 181, 181, 0.5));
-box-shadow: 0 0.2rem 0.2rem 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
-border-radius: 0.5rem;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-.right-register{
-    height: 27rem;
-    position: relative;
-    bottom: 15%;
-    right: 5%;
-    margin-bottom:20px ;}
-
+  @media(min-width:907px){
+    .register-page{   display:flex;
+     justify-content: space-between;
+     align-items: center;
+     height:70%;
+     padding-left:5% ;
+     padding-right: 5%;}
+ .left-register{display: flex;
+ flex-direction: column;
+ align-self: center;
+ align-items: center;
+ width:50%;
+ height:75%;
+ text-align: center;
+ position: relative;
+ bottom: 5%;
+ background: linear-gradient(to right , rgba( 0, 128, 128, 0.55 ), rgba(189, 181, 181, 0.5));
+ box-shadow: 0 0.2rem 0.2rem 0 rgba( 31, 38, 135, 0.37 );
+ backdrop-filter: blur( 4px );
+ -webkit-backdrop-filter: blur( 4px );
+ border-radius: 0.5rem;
+ border: 1px solid rgba( 255, 255, 255, 0.18 );
+ }
+ .right-register{   max-height: 27rem;
+ padding-right: 3rem;
+ 
+ margin-bottom:3rem ;}}
+  
     .register{
         font-family: 'Ubuntu';
         font-weight: 700;
@@ -49,7 +45,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
     .input{
         width:64%;
-        height:32px;
+        height:28px;
         font-size: small;
         border: none;
         border-radius: 0.3rem;
@@ -71,7 +67,8 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     .confirm-register{
         border: none;
         width:64%;
-        height:40px;
+        height:32px;
+        padding:0.3rem;
         background-color: rgb(32, 16, 16);
         border-radius:0.3rem ;
         margin-top: 20px;
@@ -103,3 +100,39 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
         cursor: pointer;
         color:black;
     }
+    @media(max-width:907px){
+        .register-page{width:100%;
+          display: flex;
+          gap:0;
+          justify-content: center;
+          align-items: center;
+          
+          
+          height:75%;
+          
+        }.right-register{display: none;}
+        .left-register{
+          width:80%;
+          display: flex;
+          flex-direction: column;
+          align-self: center;
+          align-items: center;
+          
+          height:75%;
+          text-align: center;
+          position: relative;
+          bottom: 5%;
+          background: linear-gradient(to right , rgba( 0, 128, 128, 0.55 ), rgba(189, 181, 181, 0.5));
+          box-shadow: 0 0.2rem 0.2rem 0 rgba( 31, 38, 135, 0.37 );
+          backdrop-filter: blur( 4px );
+          -webkit-backdrop-filter: blur( 4px );
+          border-radius: 0.5rem;
+          border: 1px solid rgba( 255, 255, 255, 0.18 );
+          }
+        
+          
+          
+      
+      }
+      
+      
