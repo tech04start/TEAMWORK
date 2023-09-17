@@ -194,3 +194,36 @@
     background-color: teal;
     color: white;
 }
+
+@media(min-width:700px) and (max-width:1000px){
+    .middle-part{
+        margin-top: 1.5rem;
+    }
+}
+@media(max-width:1100px){
+    .middle-part{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 1rem;
+        align-items: center;
+    }
+
+    .left-part {
+        width: max-content;
+
+    }
+}
+
+@media (min-width:1100px) and (max-width: 1300px){
+    .left-part{
+        width: max-content;
+    }
+    
+    .middle-part{
+        margin-top: 5rem;
+        display: flex;
+        align-items: center;
+     
+    }
+
+}
