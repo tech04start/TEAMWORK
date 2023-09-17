@@ -78,8 +78,8 @@ body{background-image: linear-gradient(to bottom right,lightgrey,darkgrey,black)
         display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:40px 60px;}
-    
+    padding:1rem 1rem;
+    }
     .active:hover{
     background-color: #212121;
     cursor: pointer;
