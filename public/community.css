@@ -1,5 +1,4 @@
-
-    /* Community */
+/* Community */
 /* .middle-part */
 
 .middle-part {
@@ -19,12 +18,12 @@
     position: relative;
     margin-top: -3rem;
     background-color: transparent;
-    
+
     -webkit-backdrop-filter: blur(4px);
     border-radius: 0.5rem;
     padding: 1rem;
-    
-    
+
+
 
 }
 
@@ -82,7 +81,7 @@
 .content-2 {
     display: flex;
     flex-direction: column;
-   
+
     border-radius: 1rem 1rem 0 1rem;
     padding-left: 1rem;
     padding-right: 0.5rem;
@@ -93,7 +92,7 @@
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     position: relative;
-    
+
 
 }
 
@@ -111,7 +110,7 @@
 .message-box input {
     padding: 0.8rem 20rem 0.8rem 0.5rem;
     border-radius: 0.5rem;
-   margin-right: -0.3rem;
+    margin-right: -0.3rem;
     background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(4px);
@@ -120,9 +119,9 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-#send{
+#send {
     height: 2.5rem;
-    
+
     padding: 0.5rem;
     cursor: pointer;
 }
@@ -174,59 +173,198 @@
 .detail {
     height: 5rem;
     width: 20rem;
-    
+
 }
-.home__redirect{
+
+.home__redirect {
     border: none;
-   cursor: pointer;
+    cursor: pointer;
     border-radius: 1.5rem;
     padding: 0.6rem;
     color: black;
     font-size: 1rem;
     font-family: 'Ubuntu';
     font-weight: 900;
+
+
+
 }
 
-.home__redirect:hover{
+.home__redirect:hover {
     background-color: teal;
     color: white;
 }
 
+/* media queries */
 
-@media(min-width:700px) and (max-width:1000px){
-    .middle-part{
-        margin-top: 1.5rem;
+@media(max-width:530px) {
+    .right-part {
+        display: none;
     }
 }
 
-@media(max-width:1100px){
-    .middle-part{
-        display: flex;
-        flex-direction: column-reverse;
-        margin-bottom: 1rem;
-        align-items: center;
+@media(min-width:530px) and (max-width:600px) {
+    .left-part {
+        display: none;
+    }
+
+    .middle-part {
+        margin-right: 1rem;
+        margin-bottom: 0.5rem;
+
+    }
+
+    .right-part .user-1 {
+        width: 25rem;
+
+
+    }
+
+    .right-part .user-2 {
+        width: 25rem;
+        margin-left: 1rem;
+
+    }
+
+    .message-box input {
+        padding-right: 10rem;
+        margin-left: -13rem;
+    }
+
+}
+
+@media(min-width:600px) and (max-width:700px) {
+    .left-part {
+        display: none;
+    }
+
+    .middle-part {
+        margin-left: 1rem;
+
+    }
+
+    .right-part .user-1 {
+        width: 28rem;
+
+
+    }
+
+    .right-part .user-2 {
+        width: 28rem;
+        margin-left: 1rem;
+
+    }
+
+    .message-box input {
+        padding-right: 12rem;
+        margin-left: -10rem;
+    }
+
+}
+
+
+@media(min-width:700px) and (max-width:800px) {
+    .left-part {
+        display: none;
+    }
+
+    .middle-part {
+        margin-left: 1.5rem;
+
+    }
+
+    .right-part .user-1 {
+        width: 30rem;
+        margin-left: 1rem;
+
+    }
+
+    .right-part .user-2 {
+        width: 30rem;
+        margin-left: 2rem;
+
+    }
+
+    .message-box input {
+        padding-right: 15rem;
+        margin-left: -6rem;
+    }
+}
+
+@media(min-width:800px) and (max-width:950px) {
+
+    .middle-part {
+        margin-right: 4rem;
     }
 
     .left-part {
-        width: max-content;
+        display: none;
+    }
 
+    .right-part {
+        margin-left: 4rem;
     }
 }
 
-@media (min-width:1100px) and (max-width: 1300px){
-    .left-part{
-        width: max-content;
+@media(min-width:950px) and (max-width:1050px) {
+    .middle-part {
+        margin-left: 1.5rem;
     }
-    
-    .middle-part{
-        margin-top: 5rem;
-        display: flex;
-        align-items: center;
-     
+
+    .left-part h1 {
+        font-size: 3rem;
+    }
+
+    .right-part .user-1 {
+        width: 27rem;
+        margin-left: 0.5rem;
+
+    }
+
+    .right-part .user-2 {
+        width: 27rem;
+        margin-left: 2rem;
+    }
+
+    .message-box input {
+        padding-right: 12rem;
+        margin-left: -10rem;
     }
 
 }
 
+@media(min-width:1050px) and (max-width:1100px) {
+    .middle-part {
+        width: min-content;
+        margin-left: 2.5rem;
+
+    }
+
+    .left-part {
+        width: min-content;
+    }
+
+    .right-part .user-1 {
+        width: 30rem;
+    }
+
+    .right-part .user-2 {
+        width: 30rem;
+        margin-left: 2rem;
+    }
+
+    .message-box input {
+        padding-right: 14rem;
+        margin-left: -7rem;
+    }
+
+}
+
+@media (min-width:1100px) and (max-width: 1300px) {
+    .middle-part {
+        margin-top: 1rem;
 
 
+    }
 
+}
