@@ -3,7 +3,9 @@
 
 .middle-part {
     display: flex;
+    width: max-content;
     justify-content: space-between;
+    margin-left: 10vw;
 }
 
 /* .left-part */
@@ -16,8 +18,9 @@
     border: none;
     border-radius: 2rem;
     position: relative;
-    margin-top: -3rem;
+    margin-top: -1.5rem;
     background-color: transparent;
+
 
     -webkit-backdrop-filter: blur(4px);
     border-radius: 0.5rem;
@@ -98,12 +101,12 @@
 
 .message-box {
     position: absolute;
-    bottom: 3%;
-    width: 100%;
+    bottom: 20%;
+    width: 59vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     /* text-align: center; */
 }
 
@@ -126,8 +129,80 @@
     cursor: pointer;
 }
 
+
 .left-part {
-    /* background-color: green; */
+    margin: auto;
+    height: 56vh;
+    line-height: 0.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+    width: 23vw;
+    margin-bottom: 3vh;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-bottom: 5vh;
+}
+
+.left-part .leader-box {
+    margin: auto;
+    height: 90%;
+}
+
+.left-part hr {
+    width: 23vw;
+}
+
+
+.left-part .leader-header {
+    position: sticky;
+}
+
+div::-webkit-scrollbar {
+    display: none;
+}
+
+.left-part .leader-main {
+
+    overflow: auto;
+    height: 34vh;
+}
+
+.left-part .strip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* position: absolute; */
+}
+
+.left-part .main-left {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin-left: 1vw;
+}
+
+.left-part .main-right {
+    margin-right: 1vw;
+}
+
+.left-part .leader-footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 3vw;
+    bottom: -1vw;
+    margin-left: 2vw;
+}
+
+.right-part {
+    margin-left: 2vw;
+}
+
+/* .left-part {
     margin: auto;
     height: 20rem;
     width: 30rem;
@@ -156,7 +231,7 @@
 }
 
 .left-part ul li {
-    /* background-image: linear-gradient(to bottom right, lightgrey, darkgrey, black); */
+   
     border-radius: 2rem;
     font-size: 1.5rem;
     padding: 0.5rem 1.3rem 0.5rem 1.3rem;
@@ -164,11 +239,10 @@
 }
 
 .left-part h1 {
-    /* background-color: #212121; */
     font-size: 3.4rem;
     margin-top: -2rem;
     font-family: 'Ubuntu';
-}
+} */
 
 .detail {
     height: 5rem;
@@ -196,10 +270,10 @@
 }
 
 /* media queries */
-@media(max-width:430px) {
+/* @media(max-width:430px) {
     .middle-part {
-     justify-content: center;
-       
+        justify-content: center;
+
     }
 
     .left-part {
@@ -281,9 +355,9 @@
         width: 10vw;
     }
 
-}
+} */
 
-@media (min-width:430px) and (max-width:600px) {
+/* @media (min-width:430px) and (max-width:600px) {
     .middle-part {
         justify-content: center;
     }
@@ -360,24 +434,151 @@
         width: 10vw;
     }
 
-}
+} */
 
 
-@media(min-width:600px) and (max-width:1100px) {
+
+@media(max-width:500px){
     .middle-part {
-        justify-content: center;
+        height: 60vh;
+        margin-left: 16vw;
     }
 
+    /* .box {
+        overflow-y: auto;
+        height: 35%;
+        margin-top: 16vw;
+
+
+    } */
+
+
+
     .left-part {
+        bottom: 61%;
+        margin-left: 12vw;
+        position: absolute;
+        /* margin-bottom: 4vh; */
+        /* height: 30vh; */
+        width: 60%;
+        height: 10%;
+        margin-right: 7vw;
+        margin-bottom: 16vw;
+    }
+
+    .leader-box {
+        overflow-y: auto;
+    }
+    
+    .leader-header h3{
         display: none;
     }
 
     .right-part {
+        /* margin-left: 0vw; */
+        margin-top: 20%;
+        /* position: absolute; */
+        height: 50%;
+    }
+
+    .box {
+        border: 1px solid black;
+        height: 32%;
+        overflow-y: auto;
+        margin-top: 22%;
+
+    }
+
+    .message-box {
+        width: 60vw;
+        margin-left: 9vw;
+    }
+
+
+
+}
+@media(min-width:500px) and (max-width:680px) {
+    .middle-part {
+        height: 60vh;
+        margin-left: 16vw;
+    }
+
+    /* .box {
+        overflow-y: auto;
+        height: 35%;
+        margin-top: 16vw;
+
+
+    } */
+
+
+
+    .left-part {
+        bottom: 61%;
+        margin-left: 12vw;
+        position: absolute;
+        /* margin-bottom: 4vh; */
+        /* height: 30vh; */
+        width: 60%;
+        height: 20%;
+        margin-right: 7vw;
+        margin-bottom: 8%;
+    }
+
+    .leader-box {
+        overflow-y: auto;
+    }
+
+    .right-part {
+        /* margin-left: 0vw; */
+        margin-top: 15%;
+        /* position: absolute; */
+        height: 50%;
+    }
+
+    .box {
+        border: 1px solid black;
+        height: 32%;
+        overflow-y: auto;
+        margin-top: 22%;
+
+    }
+
+    .message-box {
+        width: 60vw;
+        margin-left: 9vw;
+    }
+
+
+
+}
+
+@media(max-width:880px) {
+    .middle-part {
+        justify-content: center;
+        height: 60vh;
+        gap: 2vw;
+    }
+
+    .main-left .img {
+        display: none;
+    }
+
+    .main-left h3:first-child {
+        display: none;
+    }
+
+    .left-part .leader-box {
+        height: 95%;
+
+    }
+
+    .right-part {
         height: 100%;
-        margin: auto;
-        width: 80vw;
         display: flex;
         justify-content: center;
+        width: 50vw;
+        margin-right: 1vw;
     }
 
     .box {
@@ -386,7 +587,7 @@
 
     .user-1 {
         position: relative;
-        width: 56vw;
+        width: 47vw;
 
     }
 
@@ -396,7 +597,7 @@
 
     .user-2 {
         position: relative;
-        width: 56vw;
+        width: 49vw;
         bottom: 2%;
 
     }
@@ -407,14 +608,81 @@
 
     .message-box {
         position: absolute;
-        width: 56vw;
-        bottom: 5%;
+        /* width: max-content; */
+        bottom: 23%;
+        width: 60vw;
 
     }
 
     .message-box input {
-        width: 55vw;
+        width: 40vw;
         padding-right: 0vw;
+        margin-left: 5vw;
+
+    }
+
+    .message-box svg {
+        width: 10vw;
+    }
+
+}
+
+@media(min-width:880px) and (max-width:1275px) {
+    .middle-part {
+        justify-content: center;
+        height: 60vh;
+        gap: 2vw;
+    }
+
+    .left-part .leader-box {
+        height: 95%;
+
+    }
+
+    .right-part {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        width: 50vw;
+        margin-right: 1vw;
+    }
+
+    .box {
+        width: max-content;
+    }
+
+    .user-1 {
+        position: relative;
+        width: 47vw;
+
+    }
+
+    .user-1 i {
+        padding-right: 0.5rem;
+    }
+
+    .user-2 {
+        position: relative;
+        width: 49vw;
+        bottom: 2%;
+
+    }
+
+    .user-2 i {
+        padding-right: 0.5rem;
+    }
+
+    .message-box {
+        position: absolute;
+        bottom: 23%;
+        width: 60vw;
+
+    }
+
+    .message-box input {
+        width: 40vw;
+        padding-right: 0vw;
+        margin-left: 5vw;
 
     }
 
